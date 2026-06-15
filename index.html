@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!-- Copyright 2025 Shane O'Connell -->
+<html><head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>kr4z.com</title>
+<style>
+body {
+    background: #000000;
+    color: #ffffff;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+a {
+    text-decoration: underline;
+}
+
+a:link {
+    color: #ffffff;
+}
+
+a:visited {
+    color: #ffffff;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    color: #ffffff;
+}
+</style>
+<script>
+if (document.location.href.startsWith('file:')) {
+    document.addEventListener('DOMContentLoaded', (event) => {
+        const index_links = document.getElementsByClassName('index-link');
+        for (let i = 0; i < index_links.length; i++) {
+            index_links[i].href += 'index.html';
+        }
+    });
+}
+</script>
+</head><body>
+<h1>kr4z.com</h1>
+<p><audio controls src="kr4z-pronunciation.mp3"></audio></p>
+<p><a href="https://shane.oconnell.cc/">Back to regular site</a></p>
+</body></html>
