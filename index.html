@@ -7,10 +7,12 @@
 <link rel="me" href="https://mastodon.social/@shaneoc" />
 <style>
 body {
+    display: flex;
+    justify-content: center;
     background: #000000;
     color: #ffffff;
     font-family: sans-serif;
-    text-align: center;
+    margin: 0;
 }
 
 a {
@@ -32,6 +34,12 @@ a:hover {
 a:active {
     color: #ffffff;
 }
+
+#main {
+    width: clamp(50ch, 50%, 80ch);
+    max-width: 100%;
+    text-align: center;
+}
 </style>
 <script>
 if (document.location.href.startsWith('file:')) {
@@ -43,9 +51,10 @@ if (document.location.href.startsWith('file:')) {
     });
 }
 </script>
-</head><body>
+</head><body><div id="main">
 <h1>kr4z.com</h1>
 <p><audio controls src="kr4z-pronunciation.mp3"></audio></p>
 <p><a href="https://en.wikipedia.org/wiki/Leet">Leet speak</a></p>
+<p>Originally based on the word <a href="https://hitchhikers.fandom.com/wiki/Zark">zark</a>.</p>
 <p><a href="https://shane.oconnell.cc/">Back to regular site</a></p>
-</body></html>
+</div></body></html>
